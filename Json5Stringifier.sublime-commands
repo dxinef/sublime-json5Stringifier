@@ -1,0 +1,6 @@
+[
+    {
+        "caption" : "Json5 Stringify",
+        "command" : "json5_stringifier"
+    }
+]

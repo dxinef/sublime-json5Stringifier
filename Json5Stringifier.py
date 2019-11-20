@@ -23,7 +23,7 @@ class Json5StringifierCommand (sublime_plugin.TextCommand):
     result, err = cmd.communicate(input=text)
 
     if err:
-      outputPanel = window.create_output_panel(pkgName + '_errOutput')
+      outputPanel = window.create_output_panel('Json5Stringifier_errOutput')
       outputPanel.insert(edit, 0, err.decode("utf-8"))
       window.run_command('show_panel', { 'panel': 'output.Json5Stringifier_errOutput' })
     else:
